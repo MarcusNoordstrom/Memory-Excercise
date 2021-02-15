@@ -11,4 +11,25 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Direct Referencing.unity
     guid: 8e2d8751547efe04fa21bf91c7f202ca
+  - enabled: 1
+    path: Assets/Scenes/Separate Scene.unity
+    guid: c8da8d03b1579214b9770f192d3b7a40
+  - enabled: 1
+    path: Assets/Scenes/Separate Scenes/0.unity
+    guid: bea3c5526f548d844bb4af3e068774d6
+  - enabled: 1
+    path: Assets/Scenes/Separate Scenes/1.unity
+    guid: c35b79e6ed326864a86d080eb64cb58e
+  - enabled: 1
+    path: Assets/Scenes/Separate Scenes/2.unity
+    guid: 7131e91e0679c194f8315559a1549427
+  - enabled: 1
+    path: Assets/Scenes/Separate Scenes/3.unity
+    guid: 9ca8288be77c3d14bad300ff3b9f7fbd
+  - enabled: 1
+    path: Assets/Scenes/Separate Scenes/4.unity
+    guid: 73f6bbd27df792c46a95c5aa3f0eac91
+  - enabled: 1
+    path: Assets/Scenes/Separate Scenes/5.unity
+    guid: 5e917b5cc4a924e41a7cc430ee9a5f34
   m_configObjects: {}

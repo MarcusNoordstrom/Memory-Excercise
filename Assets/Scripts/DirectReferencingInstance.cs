@@ -1,6 +1,5 @@
 using System;
 using UnityEngine;
-using UnityEngine.Scripting;
 using UnityEngine.UI;
 
 public class DirectReferencingInstance : MonoBehaviour {
@@ -34,18 +33,17 @@ public class DirectReferencingInstance : MonoBehaviour {
             _currentSkybox = 5;
         }
 
-        LoadSkyBox(Resources.Load<Material>($"skybox{_currentSkybox}"), unload.isOn, gcCollect.isOn);
+        LoadSkyBox(Resources.Load<Material>($"skybox{_currentSkybox}"));
     }
 
-    void LoadSkyBox(Material skybox, bool unload, bool gcCollect) {
-
+    void LoadSkyBox(Material skybox) {
         RenderSettings.skybox = skybox;
         
-        if (unload) {
+        if (unload.isOn) {
             Resources.UnloadUnusedAssets();
         }
 
-        if (gcCollect) {
+        if (gcCollect.isOn) {
             GC.Collect();
         }
     }

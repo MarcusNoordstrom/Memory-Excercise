@@ -10,6 +10,7 @@
           <e p="Common.cs" t="Include" />
           <e p="DirectReferencing.cs" t="Include" />
           <e p="DirectReferencingInstance.cs" t="Include" />
+          <e p="SeparateScene.cs" t="Include" />
         </e>
       </e>
       <e p="Memory Excercise.sln" t="IncludeFlat" />

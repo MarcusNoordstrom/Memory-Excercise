@@ -18,9 +18,10 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Skyboxes.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Switcher.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Direct Referencing Instance.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/DirectReferencing.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/DirectReferencingInstance.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Common.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/DirectReferencingInstance.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/SeparateScene.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/DirectReferencing.cs" />
       </list>
     </option>
   </component>
@@ -73,7 +74,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1613380549853</updated>
-      <workItem from="1613380561410" duration="12181000" />
+      <workItem from="1613380561410" duration="19679000" />
     </task>
     <servers />
   </component>

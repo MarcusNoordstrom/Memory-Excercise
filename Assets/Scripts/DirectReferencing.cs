@@ -1,34 +1,56 @@
 using System;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class DirectReferencing : MonoBehaviour {
-    Material _skybox0;
-    Material _skybox1;
-    Material _skybox2;
-    Material _skybox3;
-    Material _skybox4;
-    Material _skybox5;
-
-    GameObject _skyBoxHolder;
-
+    public Toggle unload, gcCollect;
+    int _currentSkybox;
+    GameObject cam;
+    
     void Awake() {
-        _skybox0 = Resources.Load<Material>("skybox0");
-        _skybox1 = Resources.Load<Material>("skybox1");
-        _skybox2 = Resources.Load<Material>("skybox2");
-        _skybox3 = Resources.Load<Material>("skybox3");
-        _skybox4 = Resources.Load<Material>("skybox4");
-        _skybox5 = Resources.Load<Material>("skybox5");
+        cam = Camera.main.gameObject;
     }
 
     void Start() {
-        CreateSkybox(_skybox0);
+        _currentSkybox = 0;
+        CreateSkybox();
+    }
+    
+    void Update() {
+        if (Input.GetKeyUp(KeyCode.RightArrow)) {
+            _currentSkybox += 1;
+            CreateSkybox();
+        }
         
+        if (Input.GetKeyUp(KeyCode.LeftArrow)) {
+            _currentSkybox -= 1;
+            CreateSkybox();
+        }
     }
 
-    void CreateSkybox(Material skybox) {
-        Destroy(_skyBoxHolder);
-        _skyBoxHolder = new GameObject();
-        _skyBoxHolder.AddComponent<Skybox>().material = skybox;
-        RenderSettings.skybox = _skyBoxHolder.GetComponent<Skybox>().material;
+    void CreateSkybox() {
+        if (_currentSkybox < 0) {
+            _currentSkybox = 0;
+        }
+
+        if (_currentSkybox > 5) {
+            _currentSkybox = 5;
+        }
+        
+        if (cam.GetComponent<Skybox>() != null) {
+            Destroy(cam.GetComponent<Skybox>());
+        }
+        
+        var skybox = cam.AddComponent<Skybox>();
+        
+        skybox.material = Resources.Load<Material>($"skybox{_currentSkybox}");
+        
+        if (unload.isOn) {
+            Resources.UnloadUnusedAssets();
+        }
+
+        if (gcCollect.isOn) {
+            GC.Collect();
+        }
     }
 }
