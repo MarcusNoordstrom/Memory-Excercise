@@ -1,21 +1,18 @@
-using System;
-using System.Collections.Generic;
+﻿using System;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class DirectReferencing : MonoBehaviour {
-    public Toggle unload, gcCollect;
-    int _currentSkybox;
-    public List<GameObject> cams = new List<GameObject>();
-    GameObject _currentSkyboxGameObject;
+public class ResourceMode : MonoBehaviour {
 
-    //Solution 2: reference prefabs with cameras from a script in the scene. Instantiate one camera at a time.
+    int _currentSkybox;
+    GameObject _currentSkyboxGameObject;
+    public Toggle unload, gcCollect;
 
     void Start() {
         _currentSkybox = 0;
         CreateSkybox();
     }
-    
+
     void Update() {
         if (Input.GetKeyUp(KeyCode.RightArrow)) {
             _currentSkybox += 1;
@@ -41,8 +38,7 @@ public class DirectReferencing : MonoBehaviour {
             Destroy(_currentSkyboxGameObject);
         }
         
-        _currentSkyboxGameObject = Instantiate(cams[_currentSkybox]);
-        
+        _currentSkyboxGameObject = Instantiate(Resources.Load<GameObject>($"Prefabs/Skybox{_currentSkybox}"));
         
         if (unload.isOn) {
             Resources.UnloadUnusedAssets();
