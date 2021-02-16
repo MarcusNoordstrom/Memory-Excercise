@@ -23,9 +23,11 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Direct Referencing Instance.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Common.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/DirectReferencingInstance.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Resources.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/DirectReferencing.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SeparateScene.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Resources.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ResourceMode.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/StreamingAssetsMode.cs" />
       </list>
     </option>
   </component>
@@ -79,7 +81,7 @@
       <option name="presentableId" value="Default" />
       <updated>1613380549853</updated>
       <workItem from="1613380561410" duration="20667000" />
-      <workItem from="1613464457319" duration="2808000" />
+      <workItem from="1613464457319" duration="12538000" />
     </task>
     <servers />
   </component>
@@ -96,9 +98,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="616" y="240" key="run.anything.popup/0.0.1920.1040/998.-1080.1920.1040/1920.16.1680.1010@0.0.1920.1040" timestamp="1613388975538" />
-    <state x="623" y="225" key="search.everywhere.popup" timestamp="1613384668396">
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1613474197316">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" key="search.everywhere.popup/0.0.1920.1040/998.-1080.1920.1040/1920.16.1680.1010@0.0.1920.1040" timestamp="1613384668396" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/998.-1080.1920.1040/1920.16.1680.1010@0.0.1920.1040" timestamp="1613474197316" />
   </component>
 </project>
