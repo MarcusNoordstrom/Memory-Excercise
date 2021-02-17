@@ -1,14 +1,9 @@
-using System;
 using System.Collections;
-using System.IO;
-using UnityEditor;
 using UnityEngine;
 using UnityEngine.Networking;
-using UnityEngine.UI;
 
 public class StreamingAssetsMode : MonoBehaviour {
     UnityWebRequest uwr;
-
     public Shader skyboxShader;
     
     void Start() {

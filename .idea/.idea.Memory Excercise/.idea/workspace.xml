@@ -11,6 +11,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AssetBundleStuff/LoadAssetBundle.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AddressablesMode.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Editor/AssetBundleBuild.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Common.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/DirectReferencing.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/DirectReferencingInstance.cs" root0="FORCE_HIGHLIGHTING" />
@@ -28,6 +31,11 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Resources.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ResourceMode.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/StreamingAssetsMode.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AssetBundleStuff/AssetBundleBuild.cs" />
+        <option value="$PROJECT_DIR$/Assets/Editor/AssetBundleBuild.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AssetBundleStuff/LoadAssetBundle.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AssetBundleMode.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AddressablesMode.cs" />
       </list>
     </option>
   </component>
@@ -81,7 +89,8 @@
       <option name="presentableId" value="Default" />
       <updated>1613380549853</updated>
       <workItem from="1613380561410" duration="20667000" />
-      <workItem from="1613464457319" duration="12538000" />
+      <workItem from="1613464457319" duration="12918000" />
+      <workItem from="1613550237283" duration="4550000" />
     </task>
     <servers />
   </component>
